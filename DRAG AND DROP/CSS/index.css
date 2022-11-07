@@ -1,0 +1,123 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+h2 {
+    width: max-content;
+    margin: 50px auto;
+    padding: 15px;
+    border: 2px solid rgb(82, 82, 82);
+    border-radius: 5px;
+    animation: mudar .9s infinite linear alternate-reverse ;
+}
+
+@keyframes mudar {
+    0%{opacity: 0.5;}
+    100%{
+        box-shadow: 0 0 0 2px rgb(82, 82, 82);
+    }
+}
+
+.results {
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.results p {
+    height: 60px;
+    width: 80px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.results p span {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: move;
+    border-radius: 5px;
+}
+
+.results p span.move {
+    opacity: 0;
+}
+
+.operation {
+    width: 300px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 20px;
+}
+
+.res-container {
+    width: 100px;
+    height: 60px;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.res-container span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.res-container.correct {
+    border: 2px solid rgb(33, 148, 33);
+}
+
+.res-container.error {
+    border: 2px solid rgb(194, 35, 35);
+}
+
+.res-container span.dropped {
+    background-color: #fff;
+}
+
+.res-container span.enter {
+    border: 2px dotted #bbb;
+    border-radius: 5px;
+}
+
+button {
+    outline: none;
+    border: none;
+    font-size: 18px;
+    background-color: black;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: opacity .2s;
+    animation: button .9s infinite linear alternate-reverse;
+}
+
+@keyframes button {
+    0%{}
+    100%{
+        box-shadow: 0 0 0 3px rgb(82, 82, 82);
+    }
+}
+
+button:hover {
+    opacity: 0.9;
+}
